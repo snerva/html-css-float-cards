@@ -25,8 +25,12 @@ body{
     color: var(--float-primary-color);
     padding: 2rem;
     text-align: center;
+    font-family: 'Fredoka One', cursive;
 }
 
+.text, .card_text{
+    font-family: 'Fredoka', sans-serif;
+}
 .text{
     padding: 0 0 2rem;
     color: var(--float-title-color);
