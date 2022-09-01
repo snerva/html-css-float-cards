@@ -4,6 +4,14 @@
     box-sizing: border-box;
 }
 
+:root{
+    --float-primary-color: #e53170;
+    --float-title-color: black;
+    --float-card-color: #0F0E17;
+    --float-card-text-color: white;
+    --float-mail-color: #07C0F3;
+}
+
 body{
     padding: 2rem;
 }
@@ -14,14 +22,14 @@ body{
 }
 
 .title{
-    color: fuchsia;
+    color: var(--float-primary-color);
     padding: 2rem;
     text-align: center;
 }
 
 .text{
     padding: 0 0 2rem;
-    color: black;
+    color: var(--float-title-color);
     text-align: center;
 }
 
@@ -33,20 +41,26 @@ body{
 
 img{
     max-width: 100%;
+    width: 100px;
     padding-right: 1rem;
+    float: left;
 }
 
-.col, img{
-    width: calc(100% / 3);
+.col{
+    width: calc(100% / 3 - 2rem);
     float: left;
-    background-color: darkgrey;
+    background-color: var(--float-card-color);
+    margin: 1rem;
+    box-shadow: 0 0 10px var(--float-card-color);
 }
+
 
 .card_text{
-    padding: 0.5rem;
-    color: white;
+    color: var(--float-card-text-color);
+    padding-top: 0.5rem;
 }
 
 a{
-   text-decoration: none ;
+   text-decoration: none;
+   color: var(--float-mail-color);
 }
